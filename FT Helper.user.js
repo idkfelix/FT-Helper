@@ -43,6 +43,14 @@ function updatePriceSpan() {
 
                paragraph.innerHTML += `<br><br>SKU: ${sku}&nbsp;`;
                paragraph.appendChild(copyButton);
+
+               let spacer = document.createElement('span');
+               spacer.innerHTML = "&nbsp;"
+               paragraph.appendChild(spacer);
+
+               let searchBtn = document.createElement('button');
+               searchBtn.innerHTML = '<a href="https://fasttimes.retailexpress.com.au/DOTNET/Admin/Reports/ReportStockSalesMatrixByColour.aspx#">Search</a>';
+               paragraph.appendChild(searchBtn);
            }
        }
    }
